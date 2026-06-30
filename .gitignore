@@ -1,0 +1,7 @@
+# Mac system files
+.DS_Store
+
+# .NET Build artifacts
+[Bb]in/
+[Oo]bj/
+*.dll
