@@ -12,10 +12,7 @@ static int add(int a, int b)
 Console.WriteLine(add(5, 5));
 
 
-hen.Wee arraarra = new hen.Wee();
-arraarra.Suuu();
-arraarra.setName("Master CCN");
-Console.WriteLine(arraarra.getName());
+hen.Wee arraarra = new hen.Wee("Master CCN");
 
 namespace hen
 {
@@ -23,15 +20,20 @@ namespace hen
     public class Wee
     {
         private string name;
-        public void Suuu()
+        public Wee(string n)
+        {
+            setName(n);
+            getName();
+        }
+        private void Suuu()
         {
             Console.WriteLine("aaaaaaaaaaawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
         }
-        public void setName(string n)
+        private void setName(string n)
         {
             name = n;
         }
-        public string getName()
+        private string getName()
         {
             return name;
         }
