@@ -1,11 +1,12 @@
 ﻿Console.WriteLine("Hello, World!");
 int a = 3;
 
-var b= a+a;
+var b = a + a;
 Console.WriteLine(b);
 
-static int add(int a,int b){
-  return a+b;
+int add(int a, int b)
+{
+    return a + b;
 }
 
-Console.WriteLine(add(5,5));
+Console.WriteLine(add(5, 5));
