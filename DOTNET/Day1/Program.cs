@@ -11,27 +11,29 @@ static int add(int a, int b)
 
 Console.WriteLine(add(5, 5));
 
+
+hen.Wee arraarra = new hen.Wee();
+arraarra.Suuu();
+arraarra.setName("Master CCN");
+Console.WriteLine(arraarra.getName());
+
 namespace hen
 {
 
     public class Wee
     {
+        private string name;
         public void Suuu()
         {
             Console.WriteLine("aaaaaaaaaaawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
         }
-    }
-}
-
-namespace awww
-{
-
-    internal class Rrra
-    {
-        static void Main(string[] args)
+        public void setName(string n)
         {
-            hen.Wee arraarra = new hen.Wee();
-            arraarra.Suuu();
+            name = n;
+        }
+        public string getName()
+        {
+            return name;
         }
     }
 }
