@@ -31,6 +31,11 @@ mac.DispplayDetails();
 mac2.DispplayDetails();
 mac3.DispplayDetails();
 
+
+// static class
+day2.Stds.Name = "Cat";
+Console.WriteLine("/n/n" + day2.Stds.getName());
+
 namespace hen
 {
 
@@ -109,5 +114,27 @@ namespace day2
             Console.WriteLine("Manufuctur:", manufacturer);
         }
     }
+
+    // Static example
+
+
+    // No object, Only static menmber, No Inheratance ie sealed class
+
+    public static class Stds
+    {
+        public static string Name;
+
+        static Stds()
+        {
+            Name = "";
+        }
+        public static string getName()
+        {
+            return Name;
+        }
+
+    }
+
+
 }
 
