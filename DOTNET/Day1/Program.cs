@@ -44,6 +44,7 @@ namespace hen
         private string name;
         public Wee(string n)
         {
+            name = "";
             setName(n);
             getName();
         }
