@@ -38,7 +38,6 @@ Console.WriteLine("/n/n" + day2.Stds.getName());
 
 namespace hen
 {
-
     public class Wee
     {
         private string name;
@@ -135,7 +134,4 @@ namespace day2
         }
 
     }
-
-
 }
-
