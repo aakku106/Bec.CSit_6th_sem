@@ -42,7 +42,11 @@ Console.WriteLine("/n/n" + day2.Stds.getName());
 // ------- DAY 3--------------
 day3.Std me = new day3.Std("Aakku", "106A", 3);
 me.PrintColzDetails();
+day3.Std another = new day3.Std("Ram", "10A", 3);
+another.PrintColzDetails();
 me.PrintStdDetails();
+another.PrintStdDetails();
+Console.WriteLine("Total std in Colz:\t" + me.getTotalStd());
 
 
 namespace hen
@@ -154,17 +158,16 @@ namespace day3
 
     public class Std
     {
-        static string SchoolName;
-        static int TotalNumOdStd;
-
-        public string name, Id;
-        public int GPA;
+        static private string SchoolName;
         static private int TotalStudent;
+
+        private string name, Id;
+        private int GPA;
 
         static Std()
         {
             SchoolName = "Nepathys College";
-            TotalNumOdStd = 0;
+            TotalStudent = 0;
             TotalStudent = 0;
 
             Console.WriteLine("Colz created as:\t" + SchoolName);
@@ -179,17 +182,21 @@ namespace day3
         public Std(string name, string Id, int GPA)
         {
             this.name = name;
-            this.Id = "";
-            this.GPA = 0;
+            this.Id = Id;
+            this.GPA = GPA;
             TotalStudent++;
         }
         public void PrintColzDetails()
         {
-            Console.WriteLine("School Name:\t" + SchoolName + "\tTotalNumOdStds:\t" + TotalNumOdStd);
+            Console.WriteLine("School Name:\t" + SchoolName + "\tTotalNumOdStds:\t" + TotalStudent);
         }
         public void PrintStdDetails()
         {
             Console.WriteLine("Std name:\t" + name + "\tId:\t" + Id + "\tGPA:\t" + GPA);
+        }
+        public int getTotalStd()
+        {
+            return TotalStudent;
         }
 
         // public void setStdDetails(string name, string Id, int GPA)
