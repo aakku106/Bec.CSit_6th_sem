@@ -36,6 +36,15 @@ mac3.DispplayDetails();
 day2.Stds.Name = "Cat";
 Console.WriteLine("/n/n" + day2.Stds.getName());
 
+
+
+
+// ------- DAY 3--------------
+day3.Std me = new day3.Std("Aakku", "106A", 3);
+me.PrintColzDetails();
+me.PrintStdDetails();
+
+
 namespace hen
 {
     public class Wee
@@ -136,7 +145,60 @@ namespace day2
     }
 }
 
+
 namespace day3
 {
+    // create class std
+    // static field:
+    // Schoolname string
+
+    public class Std
+    {
+        static string SchoolName;
+        static int TotalNumOdStd;
+
+        public string name, Id;
+        public int GPA;
+        static private int TotalStudent;
+
+        static Std()
+        {
+            SchoolName = "Nepathys College";
+            TotalNumOdStd = 0;
+            TotalStudent = 0;
+
+            Console.WriteLine("Colz created as:\t" + SchoolName);
+        }
+
+        public Std()
+        {
+            name = "";
+            Id = "";
+            GPA = 0;
+        }
+        public Std(string name, string Id, int GPA)
+        {
+            this.name = name;
+            this.Id = "";
+            this.GPA = 0;
+            TotalStudent++;
+        }
+        public void PrintColzDetails()
+        {
+            Console.WriteLine("School Name:\t" + SchoolName + "\tTotalNumOdStds:\t" + TotalNumOdStd);
+        }
+        public void PrintStdDetails()
+        {
+            Console.WriteLine("Std name:\t" + name + "\tId:\t" + Id + "\tGPA:\t" + GPA);
+        }
+
+        // public void setStdDetails(string name, string Id, int GPA)
+        // {
+        //     name = name;
+        //     Id = Id;
+        //     GPA = GPA;
+        // }
+
+    }
 
 }
