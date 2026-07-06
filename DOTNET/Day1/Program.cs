@@ -14,7 +14,7 @@ Console.WriteLine(add(5, 5));
 
 hen.Wee arraarra = new hen.Wee("Master CCN");
 
-// DAY2 
+// ------- DAY2 --------------
 // ceating objects
 day2.Laptop mac = new day2.Laptop();
 day2.Laptop mac3 = new day2.Laptop("Mac book air m4", 16, "adsm22dds");
