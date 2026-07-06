@@ -49,6 +49,17 @@ another.PrintStdDetails();
 Console.WriteLine("Total std in Colz:\t" + me.getTotalStd());
 
 
+// ENcapulation
+
+day3.BankAccount myAcc = new day3.BankAccount();
+myAcc.AccointHolder = "Aakku";
+myAcc.AccountNumber = 106;
+myAcc.DepositeMoney(100);
+myAcc.DepositeMoney(100);
+myAcc.WithdrawMoney(50);
+Console.WriteLine("\n\nName:\t" + myAcc.AccointHolder + "\tAccNum:\t" + myAcc.AccountNumber + "\tBalance:\t" + myAcc.Balance + "\n\n");
+
+
 namespace hen
 {
     public class Wee
@@ -198,14 +209,45 @@ namespace day3
         {
             return TotalStudent;
         }
-
-        // public void setStdDetails(string name, string Id, int GPA)
-        // {
-        //     name = name;
-        //     Id = Id;
-        //     GPA = GPA;
-        // }
-
     }
 
+    // Enclupation Eg:
+    public class BankAccount
+    {
+        private int accountNumber;
+        private string accountName;
+        private decimal balance;
+
+        public BankAccount()
+        {
+            accountNumber = 0;
+            accountName = "";
+            balance = 0;
+        }
+
+        public string AccointHolder
+        {
+            get { return accountName; }
+            set { accountName = value; }
+        }
+        public int AccountNumber
+        {
+            get { return accountNumber; }
+            set { accountNumber = value; }
+        }
+        public decimal Balance
+        {
+            get { return balance; }
+            private set { balance = value; }
+        }
+
+        public void DepositeMoney(decimal amount)
+        {
+            balance += amount;
+        }
+        public void WithdrawMoney(decimal amount)
+        {
+            balance -= amount;
+        }
+    }
 }
