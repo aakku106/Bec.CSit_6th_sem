@@ -64,6 +64,14 @@ Console.WriteLine("\n\nName:\t" + myAcc.AccointHolder + "\tAccNum:\t" + myAcc.Ac
 day4.Std kaka = new day4.Std("cat");
 kaka.DisplayOnfo();
 
+// Indexer
+
+day4.StdHobbies sh = new day4.StdHobbies("adarasha");
+
+sh[0] = "cricket";
+sh[1] = "bat";
+sh.DisplayDetails();
+
 namespace hen
 {
     public class Wee
@@ -281,6 +289,33 @@ namespace day4
         public void DisplayOnfo()
         {
             Console.WriteLine($"Stdname:\t{name}, grage:\t{grade}");
+        }
+    }
+
+    // Indexer
+
+    public class StdHobbies
+    {
+        private string name;
+        public StdHobbies(string name)
+        {
+            this.name = name;
+        }
+
+        private string[] hobbies = new string[10];
+        public string this[int index]
+        {
+            get { return hobbies[index]; }
+            set { hobbies[index] = value; }
+        }
+
+        public void DisplayDetails()
+        {
+            Console.WriteLine($"name:\t{name}");
+            foreach (string a in hobbies)
+            {
+                Console.WriteLine($"\t{a}");
+            }
         }
     }
 }
