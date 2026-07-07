@@ -59,6 +59,10 @@ myAcc.DepositeMoney(100);
 myAcc.WithdrawMoney(50);
 Console.WriteLine("\n\nName:\t" + myAcc.AccointHolder + "\tAccNum:\t" + myAcc.AccountNumber + "\tBalance:\t" + myAcc.Balance + "\n\n");
 
+// ----------- DAY 4---------------
+
+day4.Std kaka = new day4.Std("cat");
+kaka.DisplayOnfo();
 
 namespace hen
 {
@@ -248,6 +252,35 @@ namespace day3
         public void WithdrawMoney(decimal amount)
         {
             balance -= amount;
+        }
+    }
+}
+
+namespace day4
+{
+    // class:std,
+    // name,properties as mombers,
+    // constructor1, takes name+grade,
+    // c2, takes only name[set grade to Not assigned using constructor channing]
+    // Method to display std info
+
+    public class Std
+    {
+        private string name;
+        private string grade;
+
+        public Std(string name, string grade)
+        {
+            this.name = name;
+            this.grade = grade;
+        }
+        public Std(string name) : this(name, "NotAssigned")
+        {
+            this.name = name;
+        }
+        public void DisplayOnfo()
+        {
+            Console.WriteLine($"Stdname:\t{name}, grage:\t{grade}");
         }
     }
 }
