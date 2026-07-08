@@ -72,6 +72,11 @@ sh[0] = "cricket";
 sh[1] = "bat";
 sh.DisplayDetails();
 
+// ---------- DAY 5--------------
+
+day5.EnumEg enumEg = new day5.EnumEg();
+enumEg.Display();
+
 namespace hen
 {
     public class Wee
@@ -319,3 +324,29 @@ namespace day4
         }
     }
 }
+
+namespace day5
+{
+    public class EnumEg
+    {
+
+        enum OrderStatus
+        {
+            Pending,
+            Processing,
+            Completed,
+            Delevered
+        }
+
+
+        public void Display()
+        {
+            OrderStatus myOrderStatus = OrderStatus.Pending;
+            int underlysingValue = (int)myOrderStatus;
+            var type = Enum.GetUnderlyingType(typeof(OrderStatus));
+            Console.WriteLine(underlysingValue + "\t" + type + "\t" + myOrderStatus + "\t" + OrderStatus.Completed + "\t" + ((int)OrderStatus.Completed));
+        }
+    }
+
+}
+
