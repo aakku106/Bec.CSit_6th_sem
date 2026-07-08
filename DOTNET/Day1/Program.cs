@@ -347,6 +347,4 @@ namespace day5
             Console.WriteLine(underlysingValue + "\t" + type + "\t" + myOrderStatus + "\t" + OrderStatus.Completed + "\t" + ((int)OrderStatus.Completed));
         }
     }
-
 }
-
