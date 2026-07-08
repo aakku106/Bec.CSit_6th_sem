@@ -77,6 +77,11 @@ sh.DisplayDetails();
 day5.EnumEg enumEg = new day5.EnumEg();
 enumEg.Display();
 
+// Struct
+
+day5.Cat str = new day5.Cat("Orange", 2);
+Console.WriteLine($"\n\tname: {str.getName()}");
+
 namespace hen
 {
     public class Wee
@@ -327,9 +332,9 @@ namespace day4
 
 namespace day5
 {
+    // Enum
     public class EnumEg
     {
-
         enum OrderStatus
         {
             Pending,
@@ -337,7 +342,6 @@ namespace day5
             Completed,
             Delevered
         }
-
 
         public void Display()
         {
@@ -347,4 +351,23 @@ namespace day5
             Console.WriteLine(underlysingValue + "\t" + type + "\t" + myOrderStatus + "\t" + OrderStatus.Completed + "\t" + ((int)OrderStatus.Completed));
         }
     }
+    // struct Eg:
+
+    public struct Cat
+    {
+        public string name;
+        public int age;
+        public string getName()
+        {
+            return name;
+        }
+        public Cat(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+    };
+
+
+
 }
