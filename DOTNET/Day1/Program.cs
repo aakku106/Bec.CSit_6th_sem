@@ -368,6 +368,4 @@ namespace day5
         }
     };
 
-
-
 }
