@@ -2,6 +2,7 @@
     ViewData["Title"] = "Cat Page";
     var name = "OrangeKat";
     var age = 6;
+    var cats = new List<string> { "orange", "black", "white", "brown", "jangali" };
 }
 
 <div class="text-center">
@@ -12,4 +13,11 @@
     {
         <h1> @name Can't vote</h1>
     }
+    <ul>
+
+        @foreach (var cat in cats)
+        {
+            <li>@cat</li>
+        }
+    </ul>
 </div>
