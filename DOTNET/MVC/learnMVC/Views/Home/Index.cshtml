@@ -1,8 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var name = "arraarra";
+    var a = 2; var b = 3;
+    var sum = a + b;
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @name
+    <h1 class="display-4">Welcome master CCN </h1>
+    a + b = @a + @b
+    <br>
+    sum: @sum
+    <br>
+    in page sum: @(a + b)
+    <br>
+    @DateTime.Now.Day
+    <br>
+    @DateTime.Now
+
+    @if (a == 2)
+    {
+        <h1>A is 2</h1>
+    }
+
+    
+
 </div>
