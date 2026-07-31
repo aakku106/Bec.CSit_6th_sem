@@ -1,0 +1,27 @@
+@using learnMVC.Controllers
+@model List<ProductController.Fruits>
+@{
+    ViewData["Title"] = "Fruits";
+}
+
+<h1>Fruits</h1>
+
+<ul>
+    @foreach (var fruit in Model)
+    {
+        <li> @fruit.Name - Rs. @fruit.Price</li>
+    }
+</ul>
+
+<h3>Add Fruit</h3>
+<form method="post" asp-action="AddProduct">
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Price</label>
+        <input type="number" name="Price" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
