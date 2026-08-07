@@ -7,17 +7,17 @@ namespace learnMVC.Views.CustomCardTagHelper
     public class CustomCardTagHelper : TagHelper
     {
         [HtmlAttributeName("first-name")]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
         [HtmlAttributeName("last-name")]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
         [HtmlAttributeName("class-name")]
-        public string ClassName { get; set; }
+        public string? ClassName { get; set; }
 
-        public override void Process(TagHelperContext context, TagHelper output)
+        public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "div";
-            output.Attributes.SetAttributes("class", "student-card");
-            var htmlContent = $"<strong>FullName</strong>:{FirstName} {LastName}</br><strong>Class:</strong> {ClassName}";
+            output.Attributes.SetAttribute("class", "student-card");
+            var htmlContent = $"<strong>FullName</strong>: {FirstName} {LastName}<br /><strong>Class:</strong> {ClassName}";
             output.Content.SetHtmlContent(htmlContent);
 
         }
