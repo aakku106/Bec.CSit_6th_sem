@@ -1,0 +1,52 @@
+@using MCProgramStartup.Views.ViewModels
+@model StudentViewModelPost
+<form asp-action="Index" asp-controller="StudentRegister" class="bg-pink-500 p-5">
+
+    <div class="from-group bg-sky-950 ">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" />
+        <span class="error" asp-validation-for="FirstName"></span>
+        <br />
+    </div>
+
+    <div class="from-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" />
+        <span class="error" asp-validation-for="LastName"></span>
+        <br />
+    </div>
+
+    <div class="from-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span class="error" asp-validation-for="Email"></span>
+        <br />
+    </div>
+
+    <div class="from-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span class="error" asp-validation-for="Password"></span>
+        <br />
+    </div>
+
+    <div class="from-group">
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" />
+        <span class="error" asp-validation-for="ConfirmPassword"></span>
+        <br />
+    </div>
+
+    <div class="from-group">
+        <label asp-for="DOB"></label>
+        <input asp-for="DOB" />
+        <span class="error" asp-validation-for="DOB"></span>
+        <br />
+    </div>
+
+    <div class="from-group">
+        <input type="submit" value="SUBMIT">
+        <br />
+    </div>
+
+</form>
