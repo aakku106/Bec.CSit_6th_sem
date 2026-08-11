@@ -11,5 +11,8 @@ namespace MCProgramStartup.Views.ViewModels
         [Required][DataType(DataType.Password)] public string Password { get; set; } = string.Empty;
         [Required][DataType(DataType.Password)][Compare("Password")] public string ConfirmPassword { get; set; } = string.Empty;
         [Required][DataType(DataType.Date)] public DateTime DOB { get; set; }
+
+        [SimpleClassName] public string wotEver { get; set; } = string.Empty;
+
     }
 }
