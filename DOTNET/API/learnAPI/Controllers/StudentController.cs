@@ -14,11 +14,16 @@ namespace learnAPI.Controllers
         private static readonly List<Student> students = new List<Student>();
 
         [HttpPost("add")]
-        public IActionResult StudentAdd()
+        public IActionResult StudentAdd([FromBody] Student student)
         {
+            students.Add(student);
             return Ok();
         }
-        [HttpGet]
+        [HttpGet("all")]
+        public IActionResult StudentList()
+        {
+            return Ok(students);
+        }
 
     }
 
