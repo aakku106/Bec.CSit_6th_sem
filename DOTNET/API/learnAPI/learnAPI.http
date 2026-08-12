@@ -1,6 +1,10 @@
 @learnAPI_HostAddress = http://localhost:5096
 
-GET {{learnAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+# GET {{learnAPI_HostAddress}}/weatherforecast/
+# Accept: application/json
 
+
+GET  {{learnAPI_HostAddress}}/api/Student/all
+Accept: application/json
 ###
+POST {{learnAPI_HostAddress}}/api/Student/add
