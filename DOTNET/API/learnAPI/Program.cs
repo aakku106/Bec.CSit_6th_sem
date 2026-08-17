@@ -1,3 +1,5 @@
+using learnAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +10,9 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//DI injection
+builder.Services.AddScoped<INotificationService, EmailNotificationService>();
 
 var app = builder.Build();
 
