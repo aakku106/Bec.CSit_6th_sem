@@ -12,7 +12,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //DI injection
-builder.Services.AddScoped<INotificationService, EmailNotificationService>();
+builder.Services.AddScoped<INotificationService, SmsNotificationService>();
+
+//scoped
+//singleton
+//transient
 
 var app = builder.Build();
 
