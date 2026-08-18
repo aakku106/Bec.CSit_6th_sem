@@ -1,13 +1,21 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 var connectionString = Environment.GetEnvironmentVariable("POSTGRES_CONNECTION_STRING")
-    ?? "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=postgres";
+    ?? $"Host=localhost;Port=5432;Database=postgres;Username={Environment.UserName}";
 
 await using var db = new AppDbContext(connectionString);
 
 try
 {
     await db.Database.EnsureCreatedAsync();
+
+    var canConnect = await db.Database.CanConnectAsync();
+
+    if (!canConnect)
+    {
+        Console.WriteLine("Connected settings were applied, but PostgreSQL still refused the connection.");
+        return;
+    }
 
     if (!await db.Students.AnyAsync())
     {
