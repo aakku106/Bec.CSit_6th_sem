@@ -2,182 +2,160 @@
 Subject: "[[CDC]]"
 ---
 
-**Section A**
+# CDC Model I
+
+## Section A
 
 **Attempt any TWO questions.**
 
-1
+1. What is ambiguous grammar? Explain the “Dangling Else” problem with example. Show how to resolve it.
 
-What is ambiguous grammar? Explain the “Dangling Else” problem with example. Show how to resolve it.
+   Construct the LL(1) parsing table for the following grammar (after removing left recursion if needed):
 
-Construct the LL(1) parsing table for the following grammar (after removing left recursion if needed):
+   E → E + T | T
 
-E → E + T | T
+   T → T * F | F  
 
-T → T * F | F  
+   F → (E) | id
 
-F → (E) | id
+   Parse the string **id + id * id** using this table.
 
-Parse the string **id + id * id** using this table.
+2. What is backpatching? Why is it used in code generation? Generate three-address code with backpatching for the following code:
 
-2
+   while (a < b) {
 
-What is backpatching? Why is it used in code generation? Generate three-address code with backpatching for the following code:
+       if (c < d) 
 
-while (a < b) {
+           x = y + z;
 
-    if (c < d) 
+       else
 
-        x = y + z;
+           x = y – z;
 
-    else
+   }
 
-        x = y – z;
+   Also show the quadruples and explain how backpatch function works.
 
-}
+3. Convert the following regular expression to NFA using Thompson’s construction:
 
-Also show the quadruples and explain how backpatch function works.
+   (a|b)*a(a|b)
 
-3
+   Then convert this NFA to DFA using subset construction method. Finally, minimize the DFA using state minimization algorithm.
 
-Convert the following regular expression to NFA using Thompson’s construction:
-
-(a|b)*a(a|b)
-
-Then convert this NFA to DFA using subset construction method. Finally, minimize the DFA using state minimization algorithm.
-
-**Section B**
+## Section B
 
 **Attempt any EIGHT questions.**
 
-4
+4. What is recursive descent parsing? Write a recursive descent parser for the following grammar:
 
-What is recursive descent parsing? Write a recursive descent parser for the following grammar:
+   S → aS | bA
 
-S → aS | bA
+   A → bA | c
 
-A → bA | c
+   Show how it parses the string “aabc”.
 
-Show how it parses the string “aabc”.
+5. Given the following DFA with states {A, B, C, D, E, F}, minimize it using state minimization algorithm:
 
-5
+   Start state: A
 
-Given the following DFA with states {A, B, C, D, E, F}, minimize it using state minimization algorithm:
+   Final states: {D, F}
 
-Start state: A
+   Transitions:
 
-Final states: {D, F}
+   δ(A, 0) = B,  δ(A, 1) = C
 
-Transitions:
+   δ(B, 0) = D,  δ(B, 1) = E
 
-δ(A, 0) = B,  δ(A, 1) = C
+   δ(C, 0) = E,  δ(C, 1) = D
 
-δ(B, 0) = D,  δ(B, 1) = E
+   δ(D, 0) = D,  δ(D, 1) = D
 
-δ(C, 0) = E,  δ(C, 1) = D
+   δ(E, 0) = F,  δ(E, 1) = F
 
-δ(D, 0) = D,  δ(D, 1) = D
+   δ(F, 0) = F,  δ(F, 1) = F
 
-δ(E, 0) = F,  δ(E, 1) = F
+   Show all steps clearly including partition refinement.
 
-δ(F, 0) = F,  δ(F, 1) = F
+6. Compute FIRST and FOLLOW for all non-terminals in the grammar:
 
-Show all steps clearly including partition refinement.
+   S → ACB | CbB | Ba
 
-6
+   A → da | BC
 
-Compute FIRST and FOLLOW for all non-terminals in the grammar:
+   B → g | ε
 
-S → ACB | CbB | Ba
+   C → h | ε
 
-A → da | BC
+   Construct the LL(1) parsing table. Is this grammar LL(1)? Justify your answer.
 
-B → g | ε
+7. What are handles in LR parsing? Explain handle pruning with example. For the grammar:
 
-C → h | ε
+   E → E + T | T
 
-Construct the LL(1) parsing table. Is this grammar LL(1)? Justify your answer.
+   T → T * F | F
 
-7
+   F → (E) | id
 
-What are handles in LR parsing? Explain handle pruning with example. For the grammar:
+   Show the handle at each step for reducing the string: **id + id * id**
 
-E → E + T | T
+8. What is intermediate code? Explain the advantages of three-address code. Generate three-address code, quadruples, triples, and indirect triples for:
 
-T → T * F | F
+   a = b * (-c) + d / e
 
-F → (E) | id
+9. Write syntax-directed definitions for translating boolean expressions into three-address code using backpatching. Generate code for:
 
-Show the handle at each step for reducing the string: **id + id * id**
+   if (a < b && c > d || e == f) 
 
-8
+       x = 1;
 
-What is intermediate code? Explain the advantages of three-address code. Generate three-address code, quadruples, triples, and indirect triples for:
+   else
 
-a = b * (-c) + d / e
+       x = 0;
 
-9
+10. Explain the following code optimization techniques with examples:
 
-Write syntax-directed definitions for translating boolean expressions into three-address code using backpatching. Generate code for:
+    1. a) Copy propagation  
+        b) Constant folding  
+        c) Dead code elimination  
+        d) Strength reduction
 
-if (a < b && c > d || e == f) 
+    Apply all applicable optimizations to:
 
-    x = 1;
+    x = 3;
 
-else
+    y = x;
 
-    x = 0;
+    z = x + 5;
 
-10
+    a = y * 2;
 
-Explain the following code optimization techniques with examples:
+    b = 8;
 
-1. a) Copy propagation  
-    b) Constant folding  
-    c) Dead code elimination  
-    d) Strength reduction
+    c = b / 2;
 
-Apply all applicable optimizations to:
+    d = a + 0;
 
-x = 3;
+11. What is register allocation? Explain register allocation using graph coloring algorithm. Given the following live ranges, perform register allocation with 3 registers available:
 
-y = x;
+    Variables: a, b, c, d, e
 
-z = x + 5;
+    Live ranges overlap:
 
-a = y * 2;
+    – a and b overlap
 
-b = 8;
+    – b and c overlap  
 
-c = b / 2;
+    – c and d overlap
 
-d = a + 0;
+    – d and e overlap
 
-11
+    – a and c don’t overlap
 
-What is register allocation? Explain register allocation using graph coloring algorithm. Given the following live ranges, perform register allocation with 3 registers available:
+    – b and e overlap
 
-Variables: a, b, c, d, e
+    Draw the interference graph and assign registers.
 
-Live ranges overlap:
+12. Write short notes on:
 
-– a and b overlap
-
-– b and c overlap  
-
-– c and d overlap
-
-– d and e overlap
-
-– a and c don’t overlap
-
-– b and e overlap
-
-Draw the interference graph and assign registers.
-
-12
-
-Write short notes on:
-
-a) Error recovery in parsing (panic mode, phrase-level recovery)  
-b) Parameter passing mechanisms (call by value, call by reference, call by name)
+    a) Error recovery in parsing (panic mode, phrase-level recovery)  
+    b) Parameter passing mechanisms (call by value, call by reference, call by name)
