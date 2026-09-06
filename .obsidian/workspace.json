@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CDC/Syllabus.md",
+                "file": "CDC/InternalExams/Exam.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Syllabus"
+              "title": "Exam"
             }
           }
         ]
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CDC/Syllabus.md",
+                "file": "CDC/InternalExams/Exam.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,7 +217,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CDC/Syllabus.md",
+                "file": "CDC/InternalExams/Exam.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -271,10 +271,13 @@
   },
   "active": "57c5ebf533c81779",
   "lastOpenFiles": [
-    "CDC.md",
-    "CDC/InternalExams/Exam.md",
-    "Untitled.canvas",
     "CDC/Syllabus.md",
+    "CDC/InternalExams/Exam.md",
+    "TW/Old_sets/2080.md",
+    "TW/Old_sets/2076.md",
+    "TW/Old_sets/2075.md",
+    "CDC.md",
+    "Untitled.canvas",
     "BSc.CSIT.md",
     "E-Com/Syllabus.md",
     "CDC/Old_sets/2080.md",
@@ -288,7 +291,6 @@
     "E-Com/Old_sets/2081.md",
     "DOTNET/Old_sets/2081.md",
     "TW/Old_sets/2079.md",
-    "TW/Old_sets/2080.md",
     "TW/Old_sets/2081.md",
     "DOTNET/Old_sets/Model.md",
     "DOTNET/Old_sets/2080.md",
@@ -296,7 +298,6 @@
     "AGENTS.md",
     "CDC/Old_sets/2075.md",
     "CDC/Old_sets/2076.md",
-    "CDC/Old_sets/2078.md",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
     "CDC/Old_sets",
