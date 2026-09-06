@@ -14,17 +14,17 @@ Subject: "[[CDC]]"
 
    E → E + T | T
 
-   T → T * F | F  
+   T → T \* F | F
 
    F → (E) | id
 
-   Parse the string **id + id * id** using this table.
+   Parse the string **id + id \* id** using this table.
 
 2. What is backpatching? Why is it used in code generation? Generate three-address code with backpatching for the following code:
 
    while (a < b) {
 
-       if (c < d) 
+       if (c < d)
 
            x = y + z;
 
@@ -38,7 +38,7 @@ Subject: "[[CDC]]"
 
 3. Convert the following regular expression to NFA using Thompson’s construction:
 
-   (a|b)*a(a|b)
+   (a|b)\*a(a|b)
 
    Then convert this NFA to DFA using subset construction method. Finally, minimize the DFA using state minimization algorithm.
 
@@ -46,7 +46,7 @@ Subject: "[[CDC]]"
 
 **Attempt any EIGHT questions.**
 
-4. What is recursive descent parsing? Write a recursive descent parser for the following grammar:
+1. What is recursive descent parsing? Write a recursive descent parser for the following grammar:
 
    S → aS | bA
 
@@ -54,7 +54,7 @@ Subject: "[[CDC]]"
 
    Show how it parses the string “aabc”.
 
-5. Given the following DFA with states {A, B, C, D, E, F}, minimize it using state minimization algorithm:
+2. Given the following DFA with states {A, B, C, D, E, F}, minimize it using state minimization algorithm:
 
    Start state: A
 
@@ -62,21 +62,21 @@ Subject: "[[CDC]]"
 
    Transitions:
 
-   δ(A, 0) = B,  δ(A, 1) = C
+   δ(A, 0) = B, δ(A, 1) = C
 
-   δ(B, 0) = D,  δ(B, 1) = E
+   δ(B, 0) = D, δ(B, 1) = E
 
-   δ(C, 0) = E,  δ(C, 1) = D
+   δ(C, 0) = E, δ(C, 1) = D
 
-   δ(D, 0) = D,  δ(D, 1) = D
+   δ(D, 0) = D, δ(D, 1) = D
 
-   δ(E, 0) = F,  δ(E, 1) = F
+   δ(E, 0) = F, δ(E, 1) = F
 
-   δ(F, 0) = F,  δ(F, 1) = F
+   δ(F, 0) = F, δ(F, 1) = F
 
    Show all steps clearly including partition refinement.
 
-6. Compute FIRST and FOLLOW for all non-terminals in the grammar:
+3. Compute FIRST and FOLLOW for all non-terminals in the grammar:
 
    S → ACB | CbB | Ba
 
@@ -88,23 +88,23 @@ Subject: "[[CDC]]"
 
    Construct the LL(1) parsing table. Is this grammar LL(1)? Justify your answer.
 
-7. What are handles in LR parsing? Explain handle pruning with example. For the grammar:
+4. What are handles in LR parsing? Explain handle pruning with example. For the grammar:
 
    E → E + T | T
 
-   T → T * F | F
+   T → T \* F | F
 
    F → (E) | id
 
-   Show the handle at each step for reducing the string: **id + id * id**
+   Show the handle at each step for reducing the string: **id + id \* id**
 
-8. What is intermediate code? Explain the advantages of three-address code. Generate three-address code, quadruples, triples, and indirect triples for:
+5. What is intermediate code? Explain the advantages of three-address code. Generate three-address code, quadruples, triples, and indirect triples for:
 
-   a = b * (-c) + d / e
+   a = b \* (-c) + d / e
 
-9. Write syntax-directed definitions for translating boolean expressions into three-address code using backpatching. Generate code for:
+6. Write syntax-directed definitions for translating boolean expressions into three-address code using backpatching. Generate code for:
 
-   if (a < b && c > d || e == f) 
+   if (a < b && c > d || e == f)
 
        x = 1;
 
@@ -112,12 +112,11 @@ Subject: "[[CDC]]"
 
        x = 0;
 
-10. Explain the following code optimization techniques with examples:
-
+7. Explain the following code optimization techniques with examples:
     1. a) Copy propagation  
-        b) Constant folding  
-        c) Dead code elimination  
-        d) Strength reduction
+       b) Constant folding  
+       c) Dead code elimination  
+       d) Strength reduction
 
     Apply all applicable optimizations to:
 
@@ -127,7 +126,7 @@ Subject: "[[CDC]]"
 
     z = x + 5;
 
-    a = y * 2;
+    a = y \* 2;
 
     b = 8;
 
@@ -135,7 +134,7 @@ Subject: "[[CDC]]"
 
     d = a + 0;
 
-11. What is register allocation? Explain register allocation using graph coloring algorithm. Given the following live ranges, perform register allocation with 3 registers available:
+8. What is register allocation? Explain register allocation using graph coloring algorithm. Given the following live ranges, perform register allocation with 3 registers available:
 
     Variables: a, b, c, d, e
 
@@ -143,7 +142,7 @@ Subject: "[[CDC]]"
 
     – a and b overlap
 
-    – b and c overlap  
+    – b and c overlap
 
     – c and d overlap
 
@@ -155,7 +154,7 @@ Subject: "[[CDC]]"
 
     Draw the interference graph and assign registers.
 
-12. Write short notes on:
+9. Write short notes on:
 
     a) Error recovery in parsing (panic mode, phrase-level recovery)  
     b) Parameter passing mechanisms (call by value, call by reference, call by name)
