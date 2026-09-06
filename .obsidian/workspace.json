@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "E-Gov/Syllabus.md",
-                "mode": "source",
+                "file": "CDC/Syllabus.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
-                  "extraContext": false,
+                  "extraContext": true,
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
@@ -99,6 +99,7 @@
       {
         "id": "9bd18f0a4c75d557",
         "type": "tabs",
+        "dimension": 47.50542299349241,
         "children": [
           {
             "id": "06f7d6df12cb72c4",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SE/Unit 2 Software Processes.pdf",
+                "file": "CDC/Syllabus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Unit 2 Software Processes"
+              "title": "Backlinks"
             }
           },
           {
@@ -168,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-08-28.md",
+                "file": "CDC/Syllabus.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,19 +184,74 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "2026-08-28.md"
+                "file": "CDC/Syllabus.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
+          },
+          {
+            "id": "fd04ce1aaf4cf3d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "CDC/Syllabus.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
+      },
+      {
+        "id": "f4b3dd7359c9b426",
+        "type": "tabs",
+        "dimension": 52.49457700650759,
+        "children": [
+          {
+            "id": "9fc522597bfe0b9a",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "CDC/Syllabus.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 0.89410446205171,
+                  "lineSizeMultiplier": 3.13066979410998,
+                  "collapse-forces": true,
+                  "centerStrength": 1,
+                  "repelStrength": 20,
+                  "linkStrength": 1,
+                  "linkDistance": 30,
+                  "scale": 0.9521985479758545,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Local graph"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,6 +270,14 @@
   },
   "active": "ecea773fe74496e7",
   "lastOpenFiles": [
+    "CDC.md",
+    "BSc.CSIT.md",
+    "E-Com/Syllabus.md",
+    "CDC/Old_sets/2080.md",
+    "CDC/Syllabus.md",
+    "E-Gov/Syllabus.md",
+    "E-government.md",
+    "DOTNET/Syllabus.md",
     "E-Gov/Old_sets/Model.md",
     "E-Gov/Old_sets/2082.md",
     "SE/Old_sets/2081.md",
@@ -226,20 +290,12 @@
     "DOTNET/Old_sets/Model.md",
     "DOTNET/Old_sets/2080.md",
     "DOTNET/Old_sets/2076.md",
-    "CDC.md",
-    "CDC/Syllabus.md",
     "AGENTS.md",
     "CDC/Old_sets/2075.md",
     "CDC/Old_sets/2076.md",
     "CDC/Old_sets/2078.md",
-    "CDC/Old_sets/2080.md",
     "2026-08-28.md",
     "TW/Old_sets/2074.md",
-    "DOTNET/DB/ADO.NET.md",
-    "TW/Syllabus.md",
-    "SE/Syllabus.md",
-    "E-Gov/Syllabus.md",
-    "E-Com/Syllabus.md",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
     "CDC/Old_sets",
