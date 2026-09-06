@@ -1,7 +1,7 @@
 ---
 Subject: "[[CDC]]"
 Topic: Important Questions Analysis
-Sets Analyzed: 2075, 2076, 2078, 2080, 2081, Model I, Model II
+Sets Analyzed: "[[2075]], [[2076]], [[2078]], [[2080]], [[2081]], [[Model_I]], [[Model_II]]"
 tags:
   - exam
   - cdc
@@ -10,57 +10,61 @@ tags:
 
 # CDC — Topic-wise Frequency Analysis & Priority List
 
-Based on 7 old question sets (2081(new) had no questions available, so excluded from counting).
+Based on 7 old question sets ([[2081 (new)]] had no questions available, so excluded from counting). Unit references link to [[Syllabus]].
 
 ## Tier 1 — Most Important (appear in almost every set)
 
-| Topic                                                                                              | Appeared In                                     | Count                      | Typical Ask                                             |
-| -------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------- | ------------------------------------------------------- |
-| Regex → NFA → DFA (Thompson's + subset construction) & DFA minimization                            | 2075, 2076, 2078, 2080, 2081, Model I           | 6/7                        | Convert given RE to DFA; minimize DFA                   |
-| Parsing table construction (LL(1) / SLR / LR(1))                                                   | 2075, 2076, 2078, 2080, 2081, Model I, Model II | 7/7                        | Construct table + test/parse a string                   |
-| Three Address Code, Quadruples & Triples                                                           | 2075, 2076, 2078, 2080, 2081, Model I           | 6/7                        | Convert given code/expression to TAC/quadruples/triples |
-| Code Optimization techniques (loop opt, constant folding, dead-code, peephole, strength reduction) | 2075, 2076, 2078, 2080, 2081, Model I, Model II | 7/7                        | Explain + apply on given code                           |
-| FIRST and FOLLOW computation                                                                       | 2075, 2080, 2081, Model I                       | 4/7 (but heavily weighted) | Compute FIRST/FOLLOW of non-terminals                   |
-| Type Checking (static/dynamic, SDD-based)                                                          | 2075, 2076, 2078, 2080, Model II                | 5/7                        | SDD for type checking / static vs dynamic               |
-| SDD / Annotated Parse Tree / Syntax-directed translation                                           | 2075, 2076, 2080, 2081, Model II                | 5/7                        | Construct annotated parse tree for given SDD            |
-| Activation Record / Activation Tree                                                                | 2075, 2078, 2080, 2081, Model II                | 5/7                        | Draw structure / explain caller-callee activities       |
-| Symbol Table (functions, entries, data structures)                                                 | 2075, 2078, 2080, 2081, Model II                | 5/7                        | List entries; compare data structures                   |
-| Factors affecting Code Generator / Target Code Generation                                          | 2075, 2076, 2078, 2080, 2081                    | 5/7                        | Discuss factors / design issues                         |
+| Topic                                                                                              | Unit / Syllabus Topic                                                                                                                               | Appeared In                                                                 | Count                  | Typical Ask                                             |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------- |
+| Regex → NFA → DFA (Thompson's + subset construction) & DFA minimization                            | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.4 Lexical Analysis]]                                                                      | [[2075]], [[2076]], [[2078]], [[2080]], [[2081]], [[Model_I]]               | 6/7                    | Convert given RE to DFA; minimize DFA                   |
+| Parsing table construction (LL(1) / SLR / LR(1))                                                   | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis]]                                                                       | [[2075]], [[2076]], [[2078]], [[2080]], [[2081]], [[Model_I]], [[Model_II]] | 7/7                    | Construct table + test/parse a string                   |
+| Three Address Code, Quadruples & Triples                                                           | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.1 Intermediate Code Generator]] | [[2075]], [[2076]], [[2078]], [[2080]], [[2081]], [[Model_I]]               | 6/7                    | Convert given code/expression to TAC/quadruples/triples |
+| Code Optimization techniques (loop opt, constant folding, dead-code, peephole, strength reduction) | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.3 Code Optimization]]           | [[2075]], [[2076]], [[2078]], [[2080]], [[2081]], [[Model_I]], [[Model_II]] | 7/7                    | Explain + apply on given code                           |
+| FIRST and FOLLOW computation                                                                       | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Top-down parsing)]]                                                    | [[2075]], [[2080]], [[2081]], [[Model_I]]                                   | 4/7 (heavily weighted) | Compute FIRST/FOLLOW of non-terminals                   |
+| Type Checking (static/dynamic, SDD-based)                                                          | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.7 Type Checking]]                                                                         | [[2075]], [[2076]], [[2078]], [[2080]], [[Model_II]]                        | 5/7                    | SDD for type checking / static vs dynamic               |
+| SDD / Annotated Parse Tree / Syntax-directed translation                                           | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.6 Syntax Directed Translation]]                                                           | [[2075]], [[2076]], [[2080]], [[2081]], [[Model_II]]                        | 5/7                    | Construct annotated parse tree for given SDD            |
+| Activation Record / Activation Tree                                                                | [[Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                           | [[2075]], [[2078]], [[2080]], [[2081]], [[Model_II]]                        | 5/7                    | Draw structure / explain caller-callee activities       |
+| Symbol Table (functions, entries, data structures)                                                 | [[Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.1 Symbol Table Design]]                                  | [[2075]], [[2078]], [[2080]], [[2081]], [[Model_II]]                        | 5/7                    | List entries; compare data structures                   |
+| Factors affecting Code Generator / Target Code Generation                                          | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Code Generator]]              | [[2075]], [[2076]], [[2078]], [[2080]], [[2081]]                            | 5/7                    | Discuss factors / design issues                         |
 
 ## Tier 2 — Important (moderate repetition, 2–4 sets)
 
-| Topic                                                     | Appeared In                      | Count | Typical Ask                                   |
-| --------------------------------------------------------- | -------------------------------- | ----- | --------------------------------------------- |
-| Compiler phases / block diagram / Compiler vs Interpreter | 2075, 2076, 2078, 2081, Model II | 5/7   | Explain phases with diagram                   |
-| Backpatching                                              | 2081, Model I (×2)               | 3/7   | Backpatching for boolean expr / while-if code |
-| Synthesized vs Inherited Attributes                       | 2078, 2080, 2081, Model II       | 4/7   | Differentiate with example                    |
-| LR(1) Items / Closure / GOTO / Core items                 | 2078, 2081, Model II (×2)        | 4/7   | Compute closure/GOTO steps                    |
-| Shift-Reduce Parsing                                      | 2076, 2078                       | 2/7   | Show shift-reduce actions for a string        |
-| Recursive Descent Parsing                                 | 2075, Model I                    | 2/7   | Differentiate / write parser & trace          |
-| LL(1) Parsing Table & Properties                          | 2080, Model I (×2)               | 3/7   | Construct table, check LL(1) validity         |
-| Error Handling in Compiler                                | 2076, Model I                    | 2/7   | Role/importance across phases                 |
-| Intermediate Code representation methods                  | 2076, 2081                       | 2/7   | Different IR methods with example             |
+| Topic                                                     | Unit / Syllabus Topic                                                                                                                               | Appeared In                                          | Count | Typical Ask                                   |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----- | --------------------------------------------- |
+| Compiler phases / block diagram / Compiler vs Interpreter | [[Syllabus#Unit 1. Introduction to Compiler (3 Hrs.)\|Unit 1 – 1.1/1.2 Compiler Structure]]                                                         | [[2075]], [[2076]], [[2078]], [[2081]], [[Model_II]] | 5/7   | Explain phases with diagram                   |
+| Backpatching                                              | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.1 SDT for Intermediate Code]]   | [[2081]], [[Model_I]] (×2)                           | 3/7   | Backpatching for boolean expr / while-if code |
+| Synthesized vs Inherited Attributes                       | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.6 Syntax Directed Translation]]                                                           | [[2078]], [[2080]], [[2081]], [[Model_II]]           | 4/7   | Differentiate with example                    |
+| LR(1) Items / Closure / GOTO / Core items                 | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (LR parsing)]]                                                          | [[2078]], [[2081]], [[Model_II]] (×2)                | 4/7   | Compute closure/GOTO steps                    |
+| Shift-Reduce Parsing                                      | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Bottom-up parsing)]]                                                   | [[2076]], [[2078]]                                   | 2/7   | Show shift-reduce actions for a string        |
+| Recursive Descent Parsing                                 | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Top-down parsing)]]                                                    | [[2075]], [[Model_I]]                                | 2/7   | Differentiate / write parser & trace          |
+| LL(1) Parsing Table & Properties                          | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Top-down parsing)]]                                                    | [[2080]], [[Model_I]] (×2)                           | 3/7   | Construct table, check LL(1) validity         |
+| Error Handling in Compiler                                | [[Syllabus#Unit 1. Introduction to Compiler (3 Hrs.)\|Unit 1 – 1.2 Error Handler]]                                                                  | [[2076]], [[Model_I]]                                | 2/7   | Role/importance across phases                 |
+| Intermediate Code representation methods                  | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.1 Intermediate Code Generator]] | [[2076]], [[2081]]                                   | 2/7   | Different IR methods with example             |
 
 ## Tier 3 — If Time Remains (appeared once, but still asked)
 
-| Topic                                           | Appeared In    | Typical Ask                           |
-| ----------------------------------------------- | -------------- | ------------------------------------- |
-| Left Recursion removal                          | 2078           | Remove left recursion from grammar    |
-| DAG vs Syntax Tree                              | 2081           | Differentiate + represent expression  |
-| Macro vs Procedure / Macro Expansion            | Model II       | Expand nested macros                  |
-| Register Allocation (Graph Coloring)            | Model I        | Interference graph + assign registers |
-| Basic Blocks & Flow Graph / Loop-invariant code | 2080, Model II | Identify basic blocks, flow graph     |
-| Operator-Precedence Parsing                     | Model II       | Build precedence table, parse string  |
-| Ambiguous Grammar / Dangling-Else problem       | Model I        | Explain + resolve                     |
-| Parameter Passing Mechanisms                    | Model I        | Call by value/reference/name          |
-| Reduce-Reduce Conflict example                  | 2081           | Give example + SLR table              |
-| Runtime Storage Management techniques           | 2078           | List types                            |
-| Hash-table symbol table implementation          | Model II       | Build hash table with chaining        |
+| Topic                                           | Unit / Syllabus Topic                                                                                                                                     | Appeared In            | Typical Ask                           |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------- |
+| Left Recursion removal                          | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Writing grammars)]]                                                          | [[2078]]               | Remove left recursion from grammar    |
+| DAG vs Syntax Tree                              | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.1 Syntax tree & DAG representations]] | [[2081]]               | Differentiate + represent expression  |
+| Macro vs Procedure / Macro Expansion            | [[Syllabus#Unit 1. Introduction to Compiler (3 Hrs.)\|Unit 1 – 1.2 Macros]]                                                                               | [[Model_II]]           | Expand nested macros                  |
+| Register Allocation (Graph Coloring)            | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Code Generator]]                    | [[Model_I]]            | Interference graph + assign registers |
+| Basic Blocks & Flow Graph / Loop-invariant code | [[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Basic blocks and flow graphs]]      | [[2080]], [[Model_II]] | Identify basic blocks, flow graph     |
+| Operator-Precedence Parsing                     | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Operator-preceding parsing]]                                                                  | [[Model_II]]           | Build precedence table, parse string  |
+| Ambiguous Grammar / Dangling-Else problem       | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Ambiguous grammar]]                                                                           | [[Model_I]]            | Explain + resolve                     |
+| Parameter Passing Mechanisms                    | [[Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                                 | [[Model_I]]            | Call by value/reference/name          |
+| Reduce-Reduce Conflict example                  | [[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 LR parsing]]                                                                                  | [[2081]]               | Give example + SLR table              |
+| Runtime Storage Management techniques           | [[Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                                 | [[2078]]               | List types                            |
+| Hash-table symbol table implementation          | [[Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.1 Symbol Table Design]]                                        | [[Model_II]]           | Build hash table with chaining        |
 
 ## Study Priority Summary
 
-1. **Master first:** Parsing (LL(1)/SLR/LR(1) table construction + parsing a string), NFA/DFA conversion & minimization, TAC/Quadruples/Triples, Code Optimization, FIRST/FOLLOW — these alone cover the majority of marks across every single year.
-2. **Then cover:** SDD/annotated parse trees, type checking, symbol table, activation records, factors affecting code generation, compiler phases.
-3. **Last, if time remains:** Backpatching details, attributes (synthesized/inherited), macros, register allocation, flow graphs, operator-precedence parsing, and short-note style topics (error recovery, parameter passing).
+1. **Master first:** Parsing ([[Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)|Unit 2 – Syntax Analysis]] — LL(1)/SLR/LR(1) table construction + parsing a string), NFA/DFA conversion & minimization (Unit 2 – Lexical Analysis), TAC/Quadruples/Triples & Code Optimization ([[Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)|Unit 4]]), FIRST/FOLLOW (Unit 2) — these alone cover the majority of marks across every single year.
+2. **Then cover:** SDD/annotated parse trees & type checking (Unit 2 – 2.6/2.7), symbol table & activation records ([[Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)|Unit 3]]), factors affecting code generation (Unit 4 – 4.2), compiler phases ([[Syllabus#Unit 1. Introduction to Compiler (3 Hrs.)|Unit 1]]).
+3. **Last, if time remains:** Backpatching details, attributes (synthesized/inherited), macros, register allocation, flow graphs, operator-precedence parsing, and short-note style topics (error recovery, parameter passing) — mostly Unit 1, Unit 3, and scattered Unit 4 sub-topics.
 
 > Note: Numerical/construction-based questions (DFA, parsing tables, TAC, FIRST/FOLLOW) dominate every paper — practicing these with different grammars is higher-value than memorizing definitions alone.
+
+---
+
+Related: [[Syllabus]] · [[2075]] · [[2076]] · [[2078]] · [[2080]] · [[2081]] · [[Model_I]] · [[Model_II]]

@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "34d0822f73801ce9",
+        "id": "d198d3ac743592e5",
         "type": "tabs",
         "children": [
           {
-            "id": "ecea773fe74496e7",
+            "id": "57c5ebf533c81779",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "CDC/Syllabus.md",
-                "mode": "preview",
-                "source": false,
+                "mode": "source",
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
-                  "extraContext": true,
+                  "extraContext": false,
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
@@ -65,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:exam",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e7411530fd696345",
@@ -251,7 +252,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 218.0234375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -268,13 +269,15 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "ecea773fe74496e7",
+  "active": "57c5ebf533c81779",
   "lastOpenFiles": [
     "CDC.md",
+    "CDC/InternalExams/Exam.md",
+    "Untitled.canvas",
+    "CDC/Syllabus.md",
     "BSc.CSIT.md",
     "E-Com/Syllabus.md",
     "CDC/Old_sets/2080.md",
-    "CDC/Syllabus.md",
     "E-Gov/Syllabus.md",
     "E-government.md",
     "DOTNET/Syllabus.md",
@@ -294,8 +297,6 @@
     "CDC/Old_sets/2075.md",
     "CDC/Old_sets/2076.md",
     "CDC/Old_sets/2078.md",
-    "2026-08-28.md",
-    "TW/Old_sets/2074.md",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
     "CDC/Old_sets",
