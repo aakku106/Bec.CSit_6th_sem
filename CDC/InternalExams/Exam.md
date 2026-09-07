@@ -2,14 +2,14 @@
 Subject: "[[CDC]]"
 Topic: Important Questions Analysis
 Sets Analyzed:
-  - "[[CDC/Old_sets/2081\|2081]]"
-  - "[[CDC/Old_sets/2080\|2080]]"
-  - "[[CDC/Old_sets/2078\|2078]]"
-  - "[[CDC/Old_sets/2076\|2076]]"
-  - "[[CDC/Old_sets/2075\|2075]]"
-  - "[[CDC/Old_sets/Model_I\|Model_I]]"
-  - "[[CDC/Old_sets/Model_II\|Model_II]]"
-  - "[[CDC/Old_sets/2081(new)\|2081 (new)]]"
+  - "[[CDC/Old_sets/2081|2081]]"
+  - "[[CDC/Old_sets/2080|2080]]"
+  - "[[CDC/Old_sets/2078|2078]]"
+  - "[[CDC/Old_sets/2076|2076]]"
+  - "[[CDC/Old_sets/2075|2075]]"
+  - "[[Model_I|Model_I]]"
+  - "[[CDC/Old_sets/Model_II|Model_II]]"
+  - "[[CDC/Old_sets/2081(new)|2081 (new)]]"
 tags:
   - exam
   - cdc
@@ -51,19 +51,19 @@ Based on 7 old question sets ([[CDC/Old_sets/2081(new)\|2081 (new)]] had no ques
 
 ## Tier 3 — If Time Remains (appeared once, but still asked)
 
-| Topic                                           | Unit / Syllabus Topic                                                                                                                                         | Appeared In                                                      | Typical Ask                           |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------- |
-| Left Recursion removal                          | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Writing grammars)]]                                                          | [[CDC/Old_sets/2078\|2078]]                                      | Remove left recursion from grammar    |
-| DAG vs Syntax Tree                              | [[CDC/Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.1 Syntax tree & DAG representations]] | [[CDC/Old_sets/2081\|2081]]                                      | Differentiate + represent expression  |
-| Macro vs Procedure / Macro Expansion            | [[CDC/Syllabus#Unit 1. Introduction to Compiler (3 Hrs.)\|Unit 1 – 1.2 Macros]]                                                                               | [[CDC/Old_sets/Model_II\|Model_II]]                              | Expand nested macros                  |
-| Register Allocation (Graph Coloring)            | [[CDC/Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Code Generator]]                    | [[CDC/Old_sets/Model_I\|Model_I]]                                | Interference graph + assign registers |
-| Basic Blocks & Flow Graph / Loop-invariant code | [[CDC/Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Basic blocks and flow graphs]]      | [[CDC/Old_sets/2080\|2080]], [[CDC/Old_sets/Model_II\|Model_II]] | Identify basic blocks, flow graph     |
-| Operator-Precedence Parsing                     | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Operator-preceding parsing]]                                                                  | [[CDC/Old_sets/Model_II\|Model_II]]                              | Build precedence table, parse string  |
-| Ambiguous Grammar / Dangling-Else problem       | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Ambiguous grammar]]                                                                           | [[CDC/Old_sets/Model_I\|Model_I]]                                | Explain + resolve                     |
-| Parameter Passing Mechanisms                    | [[CDC/Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                                 | [[CDC/Old_sets/Model_I\|Model_I]]                                | Call by value/reference/name          |
-| Reduce-Reduce Conflict example                  | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 LR parsing]]                                                                                  | [[CDC/Old_sets/2081\|2081]]                                      | Give example + SLR table              |
-| Runtime Storage Management techniques           | [[CDC/Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                                 | [[CDC/Old_sets/2078\|2078]]                                      | List types                            |
-| Hash-table symbol table implementation          | [[CDC/Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.1 Symbol Table Design]]                                        | [[CDC/Old_sets/Model_II\|Model_II]]                              | Build hash table with chaining        |
+| Topic                                           | Unit / Syllabus Topic                                                                                                                                         | Appeared In                                                      | Typical Ask                           |     |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------- | --- |
+| Left Recursion removal                          | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Syntax Analysis (Writing grammars)]]                                                          | [[CDC/Old_sets/2078\|2078]]                                      | Remove left recursion from grammar    |     |
+| DAG vs Syntax Tree                              | [[CDC/Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.1 Syntax tree & DAG representations]] | [[CDC/Old_sets/2081\|2081]]                                      | Differentiate + represent expression  |     |
+| Macro vs Procedure / Macro Expansion            | [[CDC/Syllabus#Unit 1. Introduction to Compiler (3 Hrs.)\|Unit 1 – 1.2 Macros]]                                                                               | [[CDC/Old_sets/Model_II\|Model_II]]                              | Expand nested macros                  |     |
+| Register Allocation (Graph Coloring)            | [[CDC/Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Code Generator]]                    | [[CDC/Old_sets/Model_I\|Model_I]]                                | Interference graph + assign registers |     |
+| Basic Blocks & Flow Graph / Loop-invariant code | [[CDC/Syllabus#Unit 4. Intermediate Code Generator, Code Generator, Optimization and Case studies (19 Hrs.)\|Unit 4 – 4.2 Basic blocks and flow graphs]]      | [[CDC/Old_sets/2080\|2080]], [[CDC/Old_sets/Model_II\|Model_II]] | Identify basic blocks, flow graph     |     |
+| Operator-Precedence Parsing                     | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Operator-preceding parsing]]                                                                  | [[CDC/Old_sets/Model_II\|Model_II]]                              | Build precedence table, parse string  |     |
+| Ambiguous Grammar / Dangling-Else problem       | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 Ambiguous grammar]]                                                                           | [[CDC/Old_sets/Model_I\|Model_I]]                                | Explain + resolve                     |     |
+| Parameter Passing Mechanisms                    | [[CDC/Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                                 | [[CDC/Old_sets/Model_I\|Model_I]]                                | Call by value/reference/name          |     |
+| Reduce-Reduce Conflict example                  | [[CDC/Syllabus#Unit 2. Lexical Analyzer (19 Hrs.)\|Unit 2 – 2.5 LR parsing]]                                                                                  | [[CDC/Old_sets/2081\|2081]]                                      | Give example + SLR table              |     |
+| Runtime Storage Management techniques           | [[CDC/Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.2 Runtime Storage Management]]                                 | [[CDC/Old_sets/2078\|2078]]                                      | List types                            |     |
+| Hash-table symbol table implementation          | [[CDC/Syllabus#Unit 3. Symbol Table Design and Runtime Storage Management (4 Hrs.)\|Unit 3 – 3.1 Symbol Table Design]]                                        | [[CDC/Old_sets/Model_II\|Model_II]]                              | Build hash table with chaining        |     |
 
 ## Study Priority Summary
 
