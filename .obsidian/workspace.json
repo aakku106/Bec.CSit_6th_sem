@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d198d3ac743592e5",
+        "id": "aa3b2cef5fde889a",
         "type": "tabs",
         "children": [
           {
-            "id": "57c5ebf533c81779",
+            "id": "8626ecc46802e52c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CDC/InternalExams/Exam.md",
-                "mode": "source",
+                "file": "SE/EXAM.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Exam"
+              "title": "EXAM"
             }
           }
         ]
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CDC/InternalExams/Exam.md",
+                "file": "SE/EXAM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,7 +217,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CDC/InternalExams/Exam.md",
+                "file": "SE/EXAM.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -230,8 +230,8 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": true,
+                  "collapse-display": true,
+                  "showArrow": false,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 0.89410446205171,
                   "lineSizeMultiplier": 3.13066979410998,
@@ -252,7 +252,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218.0234375
+    "width": 242.7578125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,16 +269,26 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "57c5ebf533c81779",
+  "active": "8626ecc46802e52c",
   "lastOpenFiles": [
-    "CDC/Syllabus.md",
+    "Software Engenearing.md",
+    "SE/EXAM.md",
+    "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf",
+    "SE/HAMROCSIT PDF VIEWER | SURESH CHAND.pdf",
+    "SE/Syllabus.md",
+    "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf.download/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf",
+    "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf.download",
+    "SE/Old_sets/2079.md",
+    "BSc.CSIT.md",
+    "CDC.md",
     "CDC/InternalExams/Exam.md",
+    "CDC/Old_sets/2076.md",
+    "CDC/Syllabus.md",
+    "CDC/Old_sets/2081.md",
     "TW/Old_sets/2080.md",
     "TW/Old_sets/2076.md",
     "TW/Old_sets/2075.md",
-    "CDC.md",
     "Untitled.canvas",
-    "BSc.CSIT.md",
     "E-Com/Syllabus.md",
     "CDC/Old_sets/2080.md",
     "E-Gov/Syllabus.md",
@@ -291,22 +301,11 @@
     "E-Com/Old_sets/2081.md",
     "DOTNET/Old_sets/2081.md",
     "TW/Old_sets/2079.md",
-    "TW/Old_sets/2081.md",
-    "DOTNET/Old_sets/Model.md",
-    "DOTNET/Old_sets/2080.md",
-    "DOTNET/Old_sets/2076.md",
-    "AGENTS.md",
-    "CDC/Old_sets/2075.md",
-    "CDC/Old_sets/2076.md",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
     "CDC/Old_sets",
     "E-Gov/Old_sets",
     "E-Com/Old_sets",
-    "DOTNET/Old_sets",
-    "SE/Old_sets",
-    "CDC",
-    "E-Com",
-    "TW/IT Education in Nepal_ A Survival Guide.pdf"
+    "DOTNET/Old_sets"
   ]
 }
