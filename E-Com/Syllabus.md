@@ -9,6 +9,7 @@ tags:
   - syllabus
   - e-com
 Semester: 6
+dg-publish: true
 ---
 
 # E-Commerce Syllabus

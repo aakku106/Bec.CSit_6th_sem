@@ -9,6 +9,7 @@ tags:
   - syllabus
   - exam
   - tw
+dg-publish: true
 ---
 
 # Technical Writing Syllabus

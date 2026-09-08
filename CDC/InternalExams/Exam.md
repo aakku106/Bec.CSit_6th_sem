@@ -14,6 +14,7 @@ tags:
   - exam
   - cdc
   - analysis
+dg-publish: true
 ---
 
 # CDC — Topic-wise Frequency Analysis & Priority List

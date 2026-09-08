@@ -9,6 +9,7 @@ tags:
   - exam
   - dotNet
 Semester: 6
+dg-publish: true
 ---
 
 # .NET Syllabus

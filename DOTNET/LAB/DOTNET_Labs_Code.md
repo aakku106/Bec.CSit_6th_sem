@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # .NET Lab Codes — Concise (Paper-Writing Style)
 
 ---

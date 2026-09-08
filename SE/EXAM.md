@@ -13,6 +13,7 @@ tags:
   - exam
   - se
   - analysis
+dg-publish: true
 ---
 
 # Software Engineering — Topic-wise Frequency Analysis & Priority List

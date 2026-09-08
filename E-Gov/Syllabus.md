@@ -9,6 +9,7 @@ tags:
   - syllabus
   - e-gov
 Semester: 6
+dg-publish: true
 ---
 
 # E-Government Syllabus

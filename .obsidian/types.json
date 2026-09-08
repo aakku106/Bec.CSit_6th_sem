@@ -4,6 +4,8 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "Semester": "number",
-    "Sets Analyzed": "multitext"
+    "Sets Analyzed": "multitext",
+    "dg-home": "checkbox",
+    "dg-publish": "checkbox"
   }
 }

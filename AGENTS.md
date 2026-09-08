@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # AGENTS.md
 
 Personal **BSc.CSIT (6th sem, TU Nepal, Batch 2080, studied 2083 BS)** study-repo by Adarasha Gaihre (aakku106). It is an **Obsidian vault** of course notes (syllabi + past exam papers) mixed with **practice C#/.NET code** for the .NET-centric computing subject. It is a knowledge base and learning scratch space, **not a shipped application** — treat DOTNET code as teaching snippets, not production.

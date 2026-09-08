@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 <div align="center">
 
 # BSc.CSIT 6th Semester — Study & Practice Repository

@@ -14,6 +14,7 @@ tags:
   - exam
   - tw
   - analysis
+dg-publish: true
 ---
 
 # Technical Writing — Topic-wise Frequency Analysis & Priority List

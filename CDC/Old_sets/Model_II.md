@@ -1,5 +1,6 @@
 ---
 Subject: "[[CDC]]"
+dg-publish: true
 ---
 
 # CDC Model II

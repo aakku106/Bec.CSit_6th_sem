@@ -1,5 +1,6 @@
 ---
 Subject: "[[Software Engenearing]]"
+dg-publish: true
 ---
 
 # Software Engineering Model II

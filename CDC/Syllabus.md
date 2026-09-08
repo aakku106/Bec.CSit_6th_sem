@@ -9,6 +9,7 @@ tags:
   - syllabus
   - cdc
 Semester: 6
+dg-publish: true
 ---
 
 # CDC Syllabus

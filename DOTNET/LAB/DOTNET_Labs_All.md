@@ -1,3 +1,6 @@
+---
+dg-publish: true
+---
 # CSIT .NET Lab Tasks — All Labs
 
 ---

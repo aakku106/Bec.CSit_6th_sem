@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SE/EXAM.md",
+                "file": "BSc.CSIT.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "EXAM"
+              "title": "BSc.CSIT"
             }
           }
         ]
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SE/EXAM.md",
+                "file": "BSc.CSIT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -184,7 +184,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "SE/EXAM.md"
+                "file": "BSc.CSIT.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -196,7 +196,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "SE/EXAM.md"
+                "file": "BSc.CSIT.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -226,7 +226,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "SE/EXAM.md",
+                "file": "BSc.CSIT.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -281,7 +281,22 @@
   },
   "active": "8626ecc46802e52c",
   "lastOpenFiles": [
+    "E-commerce.md",
+    "TW/Old_sets/Model.md",
+    "TW/IT Education in Nepal_ A Survival Guide.pdf",
+    "TW/Syllabus.md",
+    "TW/EXAM.md",
+    "TW/AdarashaGaihre_Resume_6thSem.pdf",
+    "2026-08-28.md",
+    "AGENTS.md",
+    "BSc.CSIT.md",
+    "CDC.md",
+    "DotNet.md",
+    "README.md",
+    "Technical Writing.md",
     "Software Engenearing.md",
+    "E-government.md",
+    "Token.md",
     "SE/EXAM.md",
     "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf",
     "SE/HAMROCSIT PDF VIEWER | SURESH CHAND.pdf",
@@ -289,8 +304,6 @@
     "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf.download/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf",
     "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf.download",
     "SE/Old_sets/2079.md",
-    "BSc.CSIT.md",
-    "CDC.md",
     "CDC/InternalExams/Exam.md",
     "CDC/Old_sets/2076.md",
     "CDC/Syllabus.md",
@@ -301,21 +314,9 @@
     "Untitled.canvas",
     "E-Com/Syllabus.md",
     "CDC/Old_sets/2080.md",
-    "E-Gov/Syllabus.md",
-    "E-government.md",
-    "DOTNET/Syllabus.md",
-    "E-Gov/Old_sets/Model.md",
-    "E-Gov/Old_sets/2082.md",
-    "SE/Old_sets/2081.md",
-    "E-Com/Old_sets/2080.md",
-    "E-Com/Old_sets/2081.md",
-    "DOTNET/Old_sets/2081.md",
-    "TW/Old_sets/2079.md",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
     "CDC/Old_sets",
-    "E-Gov/Old_sets",
-    "E-Com/Old_sets",
-    "DOTNET/Old_sets"
+    "E-Gov/Old_sets"
   ]
 }

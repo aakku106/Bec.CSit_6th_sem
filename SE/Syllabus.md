@@ -9,6 +9,7 @@ tags:
   - exam
   - se
 Semester: 6
+dg-publish: true
 ---
 
 # Software Engineering Syllabus

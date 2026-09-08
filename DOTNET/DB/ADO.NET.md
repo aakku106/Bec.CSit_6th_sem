@@ -1,5 +1,6 @@
 ---
 Subject: "[[DotNet]]"
+dg-publish: true
 ---
 
 # Access Data Object
