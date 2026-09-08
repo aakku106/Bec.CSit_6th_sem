@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "SE/EXAM.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -90,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e7411530fd696345",
@@ -185,7 +184,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "CDC/Syllabus.md"
+                "file": "SE/EXAM.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -197,10 +196,20 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "CDC/Syllabus.md"
+                "file": "SE/EXAM.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
+            }
+          },
+          {
+            "id": "073081dabf21837e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -266,7 +275,8 @@
       "bases:Create new base": false,
       "zk-prefixer:Create new unique note": false,
       "audio-recorder:Start/stop recording": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": false,
+      "digitalgarden:Digital Garden Publication Center": false
     }
   },
   "active": "8626ecc46802e52c",
