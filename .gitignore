@@ -5,3 +5,6 @@
 [Bb]in/
 [Oo]bj/
 *.dll
+
+# Obsidian: secrets (Digital Garden GitHub token lives here)
+.obsidian/plugins/digitalgarden/data.json
