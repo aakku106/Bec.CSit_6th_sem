@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSc.CSIT.md",
+                "file": "TW/Old_sets/Model.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "BSc.CSIT"
+              "title": "Model"
             }
           }
         ]
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSc.CSIT.md",
+                "file": "TW/Old_sets/Model.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,7 +226,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "BSc.CSIT.md",
+                "file": "TW/Old_sets/Model.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -281,6 +281,9 @@
   },
   "active": "8626ecc46802e52c",
   "lastOpenFiles": [
+    "TW/Old_sets/2079.md",
+    "TW/Old_sets/2076.md",
+    "BSc.CSIT.md",
     "E-commerce.md",
     "TW/Old_sets/Model.md",
     "TW/IT Education in Nepal_ A Survival Guide.pdf",
@@ -289,7 +292,6 @@
     "TW/AdarashaGaihre_Resume_6thSem.pdf",
     "2026-08-28.md",
     "AGENTS.md",
-    "BSc.CSIT.md",
     "CDC.md",
     "DotNet.md",
     "README.md",
@@ -309,11 +311,9 @@
     "CDC/Syllabus.md",
     "CDC/Old_sets/2081.md",
     "TW/Old_sets/2080.md",
-    "TW/Old_sets/2076.md",
     "TW/Old_sets/2075.md",
     "Untitled.canvas",
     "E-Com/Syllabus.md",
-    "CDC/Old_sets/2080.md",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
     "CDC/Old_sets",
