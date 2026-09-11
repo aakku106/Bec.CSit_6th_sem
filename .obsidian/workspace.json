@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSc.CSIT.md",
+                "file": "DOTNET/EXAM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "BSc.CSIT"
+              "title": "EXAM"
+            }
+          },
+          {
+            "id": "5f6ddf7d8a4182ec",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
             }
           }
         ]
@@ -169,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSc.CSIT.md",
+                "file": "DOTNET/EXAM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,7 +236,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "BSc.CSIT.md",
+                "file": "DOTNET/EXAM.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -281,12 +291,13 @@
   },
   "active": "8626ecc46802e52c",
   "lastOpenFiles": [
+    "DOTNET/Syllabus.md",
+    "BSc.CSIT.md",
     "README.md",
     "E-Gov/EXAM.md",
     "TW/Old_sets/Model.md",
     "TW/Old_sets/2079.md",
     "TW/Old_sets/2076.md",
-    "BSc.CSIT.md",
     "E-commerce.md",
     "TW/IT Education in Nepal_ A Survival Guide.pdf",
     "TW/Syllabus.md",
@@ -312,7 +323,6 @@
     "CDC/Syllabus.md",
     "CDC/Old_sets/2081.md",
     "TW/Old_sets/2080.md",
-    "TW/Old_sets/2075.md",
     "Untitled.canvas",
     "SE/Unit 2 Software Processes.pdf",
     "TW/Old_sets",
