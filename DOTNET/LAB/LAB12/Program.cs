@@ -13,33 +13,61 @@ public class Employee
 public class AppDbContext : DbContext
 {
 	public DbSet<Employee> Employees => Set<Employee>();
+
 	protected override void OnConfiguring(DbContextOptionsBuilder options) =>
-		options.UseSqlServer("Server=localhost;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;");
+		options.UseSqlite("Data Source=CompanyDB.db");
 }
 
 class Program
 {
 	static void Main()
 	{
-		try
-		{
-			using var context = new AppDbContext();
-			foreach (var employee in context.Employees.Where(employee => !employee.IsResigned))
-				Console.WriteLine($"{employee.Name} - {employee.Salary}");
+		using var context = new AppDbContext();
+		context.Database.EnsureCreated();
+		Seed(context);
 
-			var employeeToAdd = new Employee { Name = "E", Salary = 40000, Department = "HR", Experience = 1 };
-			context.Employees.Add(employeeToAdd);
+		Console.WriteLine("--- Read: active employees ---");
+		foreach (var employee in context.Employees.Where(employee => !employee.IsResigned))
+			Console.WriteLine($"{employee.Id}. {employee.Name} - {employee.Salary}");
+
+		Console.WriteLine("--- Create ---");
+		var employeeToAdd = new Employee { Name = "E", Salary = 40000, Department = "HR", IsResigned = false, Experience = 1 };
+		context.Employees.Add(employeeToAdd);
+		context.SaveChanges();
+		Console.WriteLine($"Inserted #{employeeToAdd.Id} {employeeToAdd.Name} ({employeeToAdd.Department}, exp {employeeToAdd.Experience})");
+
+		Console.WriteLine("--- Update ---");
+		var found = context.Employees.FirstOrDefault(employee => employee.Name == "E");
+		if (found is not null)
+		{
+			found.Experience++;
 			context.SaveChanges();
-
-			var found = context.Employees.FirstOrDefault(employee => employee.Name == "E");
-			if (found is not null) { found.Experience++; context.SaveChanges(); }
-
-			var toDelete = context.Employees.Find(1);
-			if (toDelete is not null) { context.Employees.Remove(toDelete); context.SaveChanges(); }
+			Console.WriteLine($"{found.Name} experience is now {found.Experience}");
 		}
-		catch (Exception exception) when (exception is InvalidOperationException or Microsoft.Data.SqlClient.SqlException)
+
+		Console.WriteLine("--- Delete ---");
+		var toDelete = context.Employees.Find(employeeToAdd.Id);
+		if (toDelete is not null)
 		{
-			Console.WriteLine($"Database unavailable: {exception.Message}");
+			context.Employees.Remove(toDelete);
+			context.SaveChanges();
+			Console.WriteLine($"Deleted #{toDelete.Id} {toDelete.Name}");
 		}
+
+		Console.WriteLine("--- Final employee list ---");
+		foreach (var employee in context.Employees)
+			Console.WriteLine($"{employee.Id}. {employee.Name} - {employee.Salary} - {employee.Department} - resigned:{employee.IsResigned} - exp:{employee.Experience}");
+	}
+
+	static void Seed(AppDbContext context)
+	{
+		if (context.Employees.Any()) return;
+
+		context.Employees.AddRange(
+			new Employee { Name = "A", Salary = 50000, Department = "IT", IsResigned = false, Experience = 2 },
+			new Employee { Name = "B", Salary = 70000, Department = "HR", IsResigned = true, Experience = 0 },
+			new Employee { Name = "C", Salary = 60000, Department = "IT", IsResigned = false, Experience = 3 });
+		context.SaveChanges();
+		Console.WriteLine("Seeded 3 sample employees.");
 	}
 }
