@@ -4,5 +4,13 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Authentication &amp; Authorization demo.</p>
+    <ul class="list-unstyled">
+        <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+        <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>
+        <li><a asp-controller="AuthorizationDemo" asp-action="Index">Dashboard ([Authorize])</a></li>
+        <li><a asp-controller="AuthorizationDemo" asp-action="Admin">Admin only ([Authorize(Roles = "Admin")])</a></li>
+        <li><a asp-controller="AuthorizationDemo" asp-action="UserOnly">User only ([Authorize(Roles = "User")])</a></li>
+        <li><a asp-controller="AuthorizationDemo" asp-action="Senior">Senior only (Policy: RequireExperience)</a></li>
+    </ul>
 </div>
