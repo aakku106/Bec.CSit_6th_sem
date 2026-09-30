@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Access Denied";
+}
+<h1>Access denied</h1>
+<p>
+    You are signed in as <strong>@User.Identity!.Name</strong>
+    (role: @User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value,
+    experience: @User.FindFirst("Experience")?.Value).
+</p>
+<p>Your role or policy does not allow this page.</p>
+<p><a asp-controller="Account" asp-action="Logout">Logout</a> | <a href="/">Home</a></p>

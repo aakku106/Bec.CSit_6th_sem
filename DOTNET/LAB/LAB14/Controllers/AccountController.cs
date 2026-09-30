@@ -40,6 +40,9 @@ public class AccountController : Controller
         return Redirect(returnUrl ?? "/");
     }
 
+    [HttpGet]
+    public IActionResult AccessDenied() => View();
+
     public async Task<IActionResult> Logout()
     {
         await HttpContext.SignOutAsync();
