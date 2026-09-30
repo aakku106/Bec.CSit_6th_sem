@@ -9,11 +9,11 @@ class Program
 
 	static void Main()
 	{
-		MessageHandler handler = ShowWelcome;
-		handler();
+		MessageHandler? handler = ShowWelcome;
+		handler?.Invoke();
 		handler += ShowGoodbye;
-		handler();
+		handler?.Invoke();
 		handler -= ShowWelcome;
-		handler();
+		handler?.Invoke();
 	}
 }
