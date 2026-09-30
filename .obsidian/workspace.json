@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOTNET/EXAM.md",
+                "file": "E-Com/EXAM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "558095590880de5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DOTNET/LAB/DOTNET_Labs_All.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "DOTNET_Labs_All"
+            }
+          },
+          {
             "id": "5f6ddf7d8a4182ec",
             "type": "leaf",
             "state": {
@@ -41,7 +65,8 @@
               "title": "Publication Center"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOTNET/EXAM.md",
+                "file": "DOTNET/LAB/DOTNET_Labs_All.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -236,7 +261,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "DOTNET/EXAM.md",
+                "file": "DOTNET/LAB/DOTNET_Labs_All.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -289,9 +314,18 @@
       "digitalgarden:Digital Garden Publication Center": false
     }
   },
-  "active": "8626ecc46802e52c",
+  "active": "558095590880de5a",
   "lastOpenFiles": [
+    "DOTNET/LAB/DOTNET_Labs_Code.md",
+    "DOTNET/EXAM.md",
     "DOTNET/Syllabus.md",
+    "DOTNET/LAB/CSIT- Lab 1&2.pdf",
+    "DOTNET/LAB/CSIT- Lab 5,6.pdf",
+    "DOTNET/LAB/DOTNET_Labs_All.md",
+    "CDC/LAB/CDC_LAB_All.md",
+    "CDC.md",
+    "E-Com/EXAM.md",
+    "CDC/LAB",
     "BSc.CSIT.md",
     "README.md",
     "E-Gov/EXAM.md",
@@ -305,7 +339,6 @@
     "TW/AdarashaGaihre_Resume_6thSem.pdf",
     "2026-08-28.md",
     "AGENTS.md",
-    "CDC.md",
     "DotNet.md",
     "Technical Writing.md",
     "Software Engenearing.md",
@@ -317,16 +350,7 @@
     "SE/Syllabus.md",
     "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf.download/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf",
     "SE/hamrocsit-pdf-viewer-suresh-chand-0ab2ddeaf76d.pdf.download",
-    "SE/Old_sets/2079.md",
-    "CDC/InternalExams/Exam.md",
-    "CDC/Old_sets/2076.md",
-    "CDC/Syllabus.md",
-    "CDC/Old_sets/2081.md",
-    "TW/Old_sets/2080.md",
     "Untitled.canvas",
-    "SE/Unit 2 Software Processes.pdf",
-    "TW/Old_sets",
-    "CDC/Old_sets",
-    "E-Gov/Old_sets"
+    "SE/Unit 2 Software Processes.pdf"
   ]
 }
