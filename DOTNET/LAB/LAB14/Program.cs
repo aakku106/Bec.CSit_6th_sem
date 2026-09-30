@@ -1,7 +1,17 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireExperience", policy =>
+        policy.RequireAssertion(context =>
+            int.TryParse(context.User.FindFirst("Experience")?.Value, out var experience) && experience >= 2));
+});
 
 var app = builder.Build();
 
@@ -16,6 +26,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();

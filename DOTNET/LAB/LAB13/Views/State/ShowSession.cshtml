@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "State Management";
+}
+<h1>Session, TempData, and Cookies</h1>
+<p>Name: @Context.Session.GetString("Name")</p>
+<p>Email: @Context.Session.GetString("Email")</p>
+<p>Theme: @Context.Request.Cookies["Theme"]</p>
+<form asp-action="SetSession" method="post"><input name="name" placeholder="Name" /><input name="email" placeholder="Email" /><button type="submit">Save session</button></form>
+<form asp-action="SetTheme" method="post"><input name="theme" placeholder="Theme" /><button type="submit">Save theme</button></form>
+<a asp-action="ClearSession">Clear session</a> | <a asp-action="DeleteTheme">Delete theme</a> | <a asp-action="AddEmployee">Set TempData</a>

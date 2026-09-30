@@ -1,0 +1,20 @@
+@model Lab9.Models.RazorDemoModel
+@{
+    ViewData["Title"] = "Razor Demo";
+    var numbers = (List<int>)ViewData["Numbers"]!;
+}
+<h1>@ViewBag.Message</h1>
+@foreach (var number in numbers)
+{
+    <p>@number: @(number > 10 ? "Number is large" : "Number is small")</p>
+}
+<form asp-action="Index" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <button type="submit">Submit</button>
+</form>
+<display-date date="DateTime.Now"></display-date>

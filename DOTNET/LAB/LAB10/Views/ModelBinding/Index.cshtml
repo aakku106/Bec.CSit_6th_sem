@@ -1,0 +1,17 @@
+@model Lab10.Models.Person
+@{
+    ViewData["Title"] = "Model Binding";
+}
+<h1>Person</h1>
+<form asp-action="Create" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Age"></label>
+    <input asp-for="Age" />
+    <span asp-validation-for="Age"></span>
+    <button type="submit">Submit</button>
+</form>
