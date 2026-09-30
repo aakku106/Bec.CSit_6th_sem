@@ -8,6 +8,6 @@ public class Person
     public string Name { get; set; } = "";
     [Required, EmailAddress]
     public string Email { get; set; } = "";
-    [Range(18, 100)]
+    [Required, Range(18, 100)]
     public int Age { get; set; }
 }
