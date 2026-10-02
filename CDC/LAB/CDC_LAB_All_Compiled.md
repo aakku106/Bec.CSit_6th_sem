@@ -28,6 +28,38 @@ for f in 1 2 3 4 5 6 7 8 9a 9b; do clang -O3 -Wall -o "$f" "$f.c"; done
 
 All 10 compile with zero warnings under `-O3 -Wall`.
 
+## How to run
+
+Run from inside this folder, so the two file-reading labs can find their data files.
+
+| # | Command | Type this | Shows |
+| --- | --- | --- | --- |
+| 1 | `./1` | `/* hi */` | `It is a comment` |
+| 2 | `./2` | `aabb` | `aabb accepted under 'a*b+'` |
+| 3 | `./3` | `a-b` | `Not a valid identifier` |
+| 4 | `./4` | *(reads `aa.txt`, no input)* | 4 lines: keyword, identifier, operator, identifier |
+| 5 | `./5` | `3`⏎`S=aB`⏎`B=b`⏎`B=$`⏎`S`⏎`n` | `FIRST(S) = { a }` |
+| 6 | `./6` | `2`⏎`S=aAb`⏎`A=b`⏎`A`⏎`0` | `FOLLOW(A) = { b }` |
+| 7 | `./7` | `i+i*i` | stack/input trace, ends `SUCCESS` |
+| 8 | `./8` | `a+b` | shift/reduce trace, ends `ACCEPT` |
+| 9a | `./9a` | `a+b*c` | `t1 := b * c` / `t2 := a + Z` |
+| 9b | `./9b` | *(reads `input.txt`, no input)* | writes `output.txt` |
+
+`⏎` is Enter. Two sample data files are included:
+
+`aa.txt` — one line, `int a + b`. Spaces around the operator matter, otherwise `a+b` is read as the single identifier `ab`.
+
+```
+int a + b
+```
+
+`input.txt` — two quadruples, one assignment and one addition.
+
+```
+= a 0 t1
++ b t1 t2
+```
+
 ## Input formats worth writing down
 
 **Labs 5 and 6** — productions are read with `%s` and the right-hand side is assumed to start at **index 2**, so write them with a single `=`, not `->`:
